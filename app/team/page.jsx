@@ -1,8 +1,24 @@
-import React from 'react'
+"use client"
+import {useEffect, useState} from "react"
+import Loader from "../../src/components/loader/Loader"
 
-const Team = () => {
+const Team=()=> {
+  const [loading,setLoading]=useState(true)
+  useEffect(()=>{
+    setTimeout(() => {
+      setLoading(false)
+    }, 1000);
+  },[])
   return (
-    <div>Team</div>
+    <main>
+    <div className='w-full flex justify-between'>
+      <h2 className='font-bold text-2xl'>Team</h2>
+      <button type='button' className='bg-active text-white py-2 px-3 rounded-lg'>Add Project</button>
+    </div>
+    {loading?<Loader/>:
+    <div className="flex justify-center items-center h-[80vh]"><h1 className="text-3xl font-bold">Team</h1></div>
+    }
+  </main>
   )
 }
 

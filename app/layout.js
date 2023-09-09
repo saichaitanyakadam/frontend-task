@@ -3,8 +3,8 @@
 import { createContext, useState } from 'react'
 import {usePathname} from "next/navigation"
 import './globals.css'
-import Sidebar from './components/sidebar/Sidebar'
-import Header from './components/header/Header'
+import Sidebar from '../src/components/sidebar/Sidebar'
+import Header from '../src/components/header/Header'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,9 +25,9 @@ export default function RootLayout({ children }) {
         <SidebarContext.Provider value={{show,setShow}}>
         <main className='flex'>
       <Sidebar params={pathname} />
-      <div className='flex flex-col lg:relative lg:left-[20vw]'>
+      <div className='flex flex-col lg:w-[80vw] lg:relative lg:left-[20vw]'>
         <Header />
-        <div className='bg-blue-300'>
+        <div className='p-3 overflow-hidden'>
           {children}
         </div>
       </div>
