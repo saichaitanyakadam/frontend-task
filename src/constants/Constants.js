@@ -88,4 +88,21 @@ export const projectCards=[
     logo:patanjaliLogo,
     date:"12/10/2023",
     description:"Glenmark Pharmaceuticals climbs to #2 position for the respiratory segment in the Indian Pharmaceutical Market..."},
+    {name:"Glenmark",
+    logo:glenmarkLogo,
+    key:16,
+    date:"12/10/2023",
+    description:"Glenmark Pharmaceuticals climbs to #2 position for the respiratory segment in the Indian Pharmaceutical Market..."
+
+},
+    {name:"Abbott",
+    logo:abbottLogo,
+    key:17,
+    date:"12/10/2023",
+    description:"Glenmark Pharmaceuticals climbs to #2 position for the respiratory segment in the Indian Pharmaceutical Market..."},
+    {name:"Patanjali",
+    key:18,
+    logo:patanjaliLogo,
+    date:"12/10/2023",
+    description:"Glenmark Pharmaceuticals climbs to #2 position for the respiratory segment in the Indian Pharmaceutical Market..."},
 ]

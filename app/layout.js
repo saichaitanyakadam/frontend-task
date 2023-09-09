@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <Sidebar params={pathname} />
       <div className='flex flex-col lg:w-[80vw] lg:relative lg:left-[20vw]'>
         <Header />
-        <div className='p-3 overflow-hidden'>
+        <div className='p-3'>
           {children}
         </div>
       </div>
