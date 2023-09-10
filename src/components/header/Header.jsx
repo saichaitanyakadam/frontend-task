@@ -17,7 +17,7 @@ const Header = () => {
         <div className='text-[20px] flex space-x-2 h-[30px] items-center'>
             <MdOutlineNotificationsNone/>
             <AiOutlineSetting />
-            <Image src={profilePic} height={40} alt="profileImage"/>
+            <Image src={profilePic} width="auto" height={40} alt="profileImage"/>
         </div>
     </header>
   )

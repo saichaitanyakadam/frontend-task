@@ -7,9 +7,9 @@ import Image from "next/image"
 const ProjectCard = ({project}) => {
   return (
     <li className='w-[80%] lg:w-[23%] p-2 shadow-lg flex flex-col' >
-          <div className='h-[100px] w-full bg-red-200 flex justify-center items-center'>
+          <div className={`h-[100px] w-full flex justify-center rounded-md items-center ${project.name==="Abbott" && "bg-blue-800"}`}>
 
-          <Image src={project.logo} alt="company-logo" width={100} className='self-center'/>
+          <Image src={project.logo} alt="company-logo" width={100} height="auto" className='self-center'/>
           </div>
           <div className='flex justify-between mt-1 items-center'>
 

@@ -23,11 +23,11 @@ const Projects = () => {
       </div>
       {loading?<Loader/>:<div className='flex flex-col'>
      <ul className='w-full mt-2 flex flex-col items-center list-none lg:flex-row gap-3 flex-wrap'>
-     {projectCards.slice(count,count+8 ).map(item=>(
+     {projectCards.slice(count*8,8+count*8 ).map(item=>(
        <ProjectCard key={item.key} project={item}/>
      ))}
    </ul>
-   <div className='self-end flex items-center'>
+   <div className='self-end flex items-center mt-2' >
     <button type='button' className='mr-1 bg-cyan-700 text-white p-2' onClick={()=>{
         if (count>0) {
           setCount(prev=>prev-1)

@@ -18,7 +18,8 @@ const Sidebar = ({params}) => {
    <BsXLg className='text-[1.5rem] lg:hidden absolute top-2 left-2' onClick={()=>{
           setShow(false)
         }}/>
-    <Image alt="logo" src={logo} width={100} height={100} className='self-center' />
+        <Link href="/" className='w-full flex justify-center'>
+    <Image alt="logo" src={logo} width={100} height="auto" className='self-center' /></Link>
       <ul className='mt-3 space-y-2 text-[#A1A1A1]'>
         <Link href="/"><li onClick={()=>{
           setShow(false)
@@ -39,7 +40,7 @@ const Sidebar = ({params}) => {
       <button className='border border-cyan-500 text-cyan-500 py-2 rounded-lg mt-3 self-stretch' type="button">+ New Project</button>
       </div>
       <div className='flex items-center mb-2'>
-        <Image src={profile} alt="profile" width={60} />
+        <Image src={profile} alt="profile" width={60} height="auto" />
         <div className='ml-2'>
           <p className='font-medium'>Varun Kubal</p>
           <p className='text-[#909090] text-[10px]'>Senior</p>
